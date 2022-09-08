@@ -84,18 +84,18 @@ export default defineComponent({
     },
     /* creo el link to WS */
     textToSend() {
-      let lead = `**********************
+      let lead = `************************
       `;
       [...this.myCartStore.$state.cart].forEach((item) => {
-        lead += `Producto: ${item.productName}      
-        Cantidad: ${item.cant}      
-        Precio x Unidad: ${item.price}             `;
+        lead += `Producto: ${item.productName}          
+        Cantidad: ${item.cant}          
+        Precio x Unidad: ${item.price}                 `;
       });
       lead += `Precio Total: ${this.precioTotal}         
-      **********************
+      ************************
       \n
      `;
-      return `https://api.whatsapp.com/send?phone=5354955890&text=${lead}`;
+      return `https://api.whatsapp.com/send?phone=5358259854&text=${lead}`;
     },
   },
 });
